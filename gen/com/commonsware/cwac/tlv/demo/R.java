@@ -62,19 +62,23 @@ containing a value of this type.
     }
     public static final class id {
         public static final int fling=0x7f040001;
-        public static final int icon=0x7f040007;
-        public static final int label=0x7f040008;
+        public static final int icon=0x7f04000a;
+        public static final int inputMemo=0x7f040007;
+        public static final int label=0x7f04000b;
+        public static final int memoLabel=0x7f040006;
         public static final int none=0x7f040000;
         public static final int slide=0x7f040002;
         public static final int slideLeft=0x7f040004;
         public static final int slideRight=0x7f040003;
-        public static final int submit=0x7f040006;
-        public static final int task=0x7f040005;
+        public static final int submit=0x7f040009;
+        public static final int task=0x7f040008;
+        public static final int topicName=0x7f040005;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
-        public static final int row=0x7f030001;
-        public static final int row2=0x7f030002;
+        public static final int create_topic_alert=0x7f030000;
+        public static final int main=0x7f030001;
+        public static final int row=0x7f030002;
+        public static final int row2=0x7f030003;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
