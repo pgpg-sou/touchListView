@@ -18,10 +18,28 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		String  taskTable = "";
 		taskTable += "create table task (";
 		taskTable += "id integer primary key AUTOINCREMENT";
-		taskTable += ",title text not null";
+		taskTable += ",comments_count integer";
+		taskTable += ",completed_at text";
 		taskTable += ",memo text";
-		taskTable += ",turn integer";
+		taskTable += ",scheduled_at text";
+		taskTable += ",task_type integer";
+		taskTable += ",approval_flg integer";
+		taskTable += ",title text not null";
+		taskTable += ",updated_at text";
+		taskTable += ",recommend_user_id text";
+		taskTable += ",created_at text";
+		taskTable += ",public text";
+		taskTable += ",recommend_user_name text";
+		taskTable += ",seq integer";
 		taskTable += ")";
+		
+		String comments = "";
+		comments += "create table comments (";
+		comments += "id integer primary key AUTOINCREMENT";
+		comments += ", messeage text";
+		comments += ", user_id text";
+		comments += ", user_name text";
+		comments += ", user_image text";
 		
 		db.execSQL(taskTable);
 	}
